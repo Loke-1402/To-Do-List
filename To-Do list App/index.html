@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Landing Page -->
+    <div class="landing-page">
+        <div class="wave-bg"></div>
+        <div class="landing-content">
+            <h1 class="title">Todo Wave</h1>
+            <p class="subtitle">Ride the wave of productivity</p>
+            <button class="enter-btn">Start Organizing</button>
+        </div>
+    </div>
+
+    <!-- Todo App (initially hidden) -->
+    <div class="todo-app hidden">
+        <div class="wave-bg"></div>
+        <div class="container">
+            <h1>Todo List</h1>
+            <div class="todo-input">
+                <input type="text" id="todo-input" placeholder="Add a new task...">
+                <button id="add-btn"><i class="fas fa-plus"></i></button>
+            </div>
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="active">Active</button>
+                <button class="filter-btn" data-filter="completed">Completed</button>
+            </div>
+            <ul class="todo-list"></ul>
+            <div class="todo-footer">
+                <span class="items-left">0 items left</span>
+                <button class="clear-completed">Clear Completed</button>
+            </div>
+        </div>
+        <button class="back-btn"><i class="fas fa-arrow-left"></i> Back to Home</button>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
